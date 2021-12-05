@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="c/c.css">
+	<script src="j/menu.js"></script>
+</head>
+<body id="bvideo">
+	<div class="ctn">
+		<br>
+		<video width="100%" controls preload="metadata" src="v/fldfd.mp4"></video>
+
+		<ul id="vlist">
+			<li data-v="fldfd">慶賀5·13  世界法輪大法日</li>
+			<li data-v="zifen-1">“天安门自焚”真相</li>
+			<li data-v="1400">曝光1400例谎言</li>
+			<li data-v="425">4.25法轮功万人上访</li>			
+			<li data-v="taisao">为什么要退出党，团，队？</li>
+			<li data-v="mocuop">中共活摘器官的罪恶</li>
+		</ul>
+			
+<script src="j/relate.js"></script>
+
+		</div>
+		<script src="j/j.js"></script>
+		<script>
+			$(document).ready(function () {    
+				$("#vlist li").click( function(){
+					$("#vlist li").removeClass("act");
+					$(this).addClass("act");
+					var src = $(this).attr("data-v");				
+					$("video").attr("src", "v/"+src+".mp4");
+					$('video')[0].play(); 
+				})
+			})
+		</script>
+	</body>
+	</html>

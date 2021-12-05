@@ -1,0 +1,290 @@
+@charset 'UTF-8';
+
+p {
+    text-align: justify;
+    margin: 0.3rem 0;
+    display: block;
+}
+
+.cfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+input,textarea,select,input:focus {
+    outline: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+:before,:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.clear {
+    clear: both;
+    display: block;
+}
+
+.clear15 {
+    clear: both;
+    display: block;
+    height: 15px;
+}
+
+body,div,ul,li,ol,dl,dt,dd,input,h1,h2,h3,h4,h5,h6,span,strong,img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-weight: normal;
+}
+
+html,body {
+    overflow-x: hidden;
+}
+
+
+ul,li,ol,dl,dt,dd {
+    /*list-style: none;*/
+}
+
+li{
+    margin: 0 0 0 0.8rem;
+}
+
+* {
+    transition: color .3s;
+    -moz-transition: color .3s;
+    -ms-transition: color .3s;
+    -o-transition: color .3s;
+    -webkit-transition: color .3s
+}
+
+img {
+    max-width: 100%
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover,a:focus {
+    text-decoration: none
+}
+
+body {
+    font-family: '宋体',宋体b8b体,Microsoft YaHei, Arial, sans-serif;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 2rem 0 0 0;
+    line-height: 1.4;
+
+}
+
+.ctn {
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 0.5rem;
+}
+
+h2.tit {
+    text-align: center;
+    margin: 1em 0;
+    text-transform: uppercase;
+    color: #00638b;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    background: #007bac;
+    color: #ff0;
+    font-weight: bold;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 640px;
+    left: 50%;
+}
+
+h1,h2,h3,h4 {
+    color: #33F;
+    font-weight: bold;
+}
+
+h1 {
+    margin:1rem 0 0 0;
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin:1.5rem 0 0.5rem 0;
+}
+
+h3 {
+    font-size: 0.9rem;
+}
+
+.n1 {
+    border:2px dashed #007bac;
+    background:#eee;
+    padding: 0.5rem;
+    overflow: hidden;
+    margin:0 0 1rem 0;
+}
+
+.n1 img {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+#s1 img{
+    margin: 0.5rem auto;
+
+}
+
+.zf1{
+    overflow: hidden;    
+    
+}
+
+.zf1 img{
+    width: 100%;
+}
+
+
+#zf2{
+    margin: 0 0 1rem 0;
+}
+
+#b425 .n1 h2{
+    margin: 0 0 0.5rem 0;
+}
+
+
+
+#relate{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#relate div.n2{
+    width: 48%;
+    margin:0 1% 1rem 1%;
+}
+
+.n2 img{
+    height: 5rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.n2 h4{
+    font-size: 0.7rem;
+}
+
+#b1400 h2{
+    margin: 0 0 1rem 0;
+}
+
+#b1400 .n1{
+    background: #eee;
+}
+
+#bfaq{
+    text-align: justify;
+}
+
+#vlist li{
+    margin: 0.5rem 0 0 0.8rem;
+}
+
+#vlist li.act{
+    font-weight: bold;
+    color: #33F;
+}
+
+a.popup{
+    background: #ccc;
+    display: block;
+    padding: 0.2rem;
+    margin: 0.5rem auto;
+    width: 5rem;
+    text-align: center;
+}
+
+#popup{
+    position: fixed;
+    overflow-y: scroll;
+    z-index: 3;
+    top: 1.5rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+
+#close{
+    background: #ccc;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5rem;
+    z-index: 3;
+    position: fixed;
+    text-align: center;
+
+}
+
+#popupt{
+    padding: 0 0.5rem;
+}
+#popupt pre{
+    max-width: 100%;
+    white-space: pre-line;
+    text-align: justify;
+    
+}
+
+.n1 a.popup{
+    background: #33f;
+    color: #fff;
+}
+
+#audi audio{
+    width: 100%;
+    margin: 0 0 1rem 0;
+}
+
+#audi h3{
+
+}
